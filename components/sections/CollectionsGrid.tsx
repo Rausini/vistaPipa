@@ -31,10 +31,14 @@ export function CollectionsGrid() {
   return (
     <section className="section-pad">
       <div className="container-site">
-        <div className="mb-8 max-w-2xl">
-          <h2 className="font-display text-3xl sm:text-4xl">
+        <div className="mb-10 max-w-2xl">
+          <p className="eyebrow">Coleções</p>
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl">
             Navegue pelas coleções e descubra o seu Pipa ideal
           </h2>
+          <p className="mt-3 text-brown-dark">
+            Do sol de todo dia ao movimento — escolha por uso.
+          </p>
         </div>
         <div className="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4">
           {COLLECTIONS.map((item) => (
