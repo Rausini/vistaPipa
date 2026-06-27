@@ -1,0 +1,161 @@
+{
+  "_comment": "PLACEHOLDER — preencher com dados reais (products.json do cliente). Campos com '[DEFINIR]' precisam de nome/preço/fit/cores reais. Fotos já são reais (assets/images/produtos).",
+  "products": [
+    {
+      "id": 1,
+      "slug": "modelo-1",
+      "name": "[DEFINIR] Modelo 01",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["best-seller", "solar"],
+      "image": "/assets/images/produtos/product-1.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#2b2017", "image": "/assets/images/produtos/product-1.webp" },
+        { "name": "[DEFINIR]", "hex": "#9e8770", "image": "/assets/images/produtos/product-1-alt.webp" }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "modelo-2",
+      "name": "[DEFINIR] Modelo 02",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["best-seller", "solar"],
+      "image": "/assets/images/produtos/product-2.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#1f2a33", "image": "/assets/images/produtos/product-2.webp" },
+        { "name": "[DEFINIR]", "hex": "#c4a373", "image": "/assets/images/produtos/product-2-alt.webp" }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "modelo-3",
+      "name": "[DEFINIR] Modelo 03",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["best-seller", "solar"],
+      "image": "/assets/images/produtos/product-3.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#3a2e22", "image": "/assets/images/produtos/product-3.webp" },
+        { "name": "[DEFINIR]", "hex": "#8a9a8f", "image": "/assets/images/produtos/product-3-alt.webp" }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "modelo-4",
+      "name": "[DEFINIR] Modelo 04",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["best-seller", "solar"],
+      "image": "/assets/images/produtos/product-4.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#2b2017", "image": "/assets/images/produtos/product-4.webp" },
+        { "name": "[DEFINIR]", "hex": "#b8732f", "image": "/assets/images/produtos/product-4-alt.webp" }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "modelo-5",
+      "name": "[DEFINIR] Modelo 05",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["best-seller", "solar"],
+      "image": "/assets/images/produtos/product-5.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#1c1c1c", "image": "/assets/images/produtos/product-5.webp" },
+        { "name": "[DEFINIR]", "hex": "#9e8770", "image": "/assets/images/produtos/product-5-alt.webp" }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "modelo-6",
+      "name": "[DEFINIR] Modelo 06",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["best-seller", "solar"],
+      "image": "/assets/images/produtos/product-6.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#33281d", "image": "/assets/images/produtos/product-6.webp" },
+        { "name": "[DEFINIR]", "hex": "#6f8aa3", "image": "/assets/images/produtos/product-6-alt.webp" }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "modelo-7",
+      "name": "[DEFINIR] Modelo 07",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["performance"],
+      "image": "/assets/images/produtos/product-7.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#1a1a1a", "image": "/assets/images/produtos/product-7.webp" },
+        { "name": "[DEFINIR]", "hex": "#d14b3d", "image": "/assets/images/produtos/product-7-alt.webp" }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "modelo-8",
+      "name": "[DEFINIR] Modelo 08",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["performance"],
+      "image": "/assets/images/produtos/product-8.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#222b2e", "image": "/assets/images/produtos/product-8.webp" },
+        { "name": "[DEFINIR]", "hex": "#3fae8f", "image": "/assets/images/produtos/product-8-alt.webp" }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "modelo-9",
+      "name": "[DEFINIR] Modelo 09",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["performance"],
+      "image": "/assets/images/produtos/product-9.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#101418", "image": "/assets/images/produtos/product-9.webp" },
+        { "name": "[DEFINIR]", "hex": "#e0a52e", "image": "/assets/images/produtos/product-9-alt.webp" }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "modelo-10",
+      "name": "[DEFINIR] Modelo 10",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["performance"],
+      "image": "/assets/images/produtos/product-10.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#2b2017", "image": "/assets/images/produtos/product-10.webp" },
+        { "name": "[DEFINIR]", "hex": "#7a8c99", "image": "/assets/images/produtos/product-10-alt.webp" }
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "modelo-11",
+      "name": "[DEFINIR] Modelo 11",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["performance"],
+      "image": "/assets/images/produtos/product-11.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#1c1c1c", "image": "/assets/images/produtos/product-11.webp" },
+        { "name": "[DEFINIR]", "hex": "#c46b3d", "image": "/assets/images/produtos/product-11-alt.webp" }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "modelo-12",
+      "name": "[DEFINIR] Modelo 12",
+      "priceBRL": null,
+      "fit": "[DEFINIR] caimento",
+      "tags": ["performance"],
+      "image": "/assets/images/produtos/product-12.webp",
+      "colors": [
+        { "name": "[DEFINIR]", "hex": "#2e2620", "image": "/assets/images/produtos/product-12.webp" },
+        { "name": "[DEFINIR]", "hex": "#9e8770", "image": "/assets/images/produtos/product-12-alt.webp" }
+      ]
+    }
+  ]
+}

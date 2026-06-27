@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-16 -12 432 138" style="display:block;width:100%;height:auto" role="img" aria-label="PIPA">
+  <g fill="none" stroke="#14181D" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16.5 24.5 H104.5 V70 H16.5 V93.5"/>
+    <path d="M136.5 24.5 V93.5"/>
+    <path d="M175.5 24.5 H261.5 V70 H175.5 V93.5"/>
+    <path d="M292.5 93.5 V66 A45.5 45.5 0 0 1 383.5 66 V93.5"/>
+  </g>
+  <path d="M338 55 L354 71 L338 87 L322 71 Z" fill="#14181D" stroke="#14181D" stroke-width="5" stroke-linejoin="round"/>
+</svg>
