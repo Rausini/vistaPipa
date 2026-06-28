@@ -40,8 +40,6 @@ export function Hero() {
       <div className="relative flex h-full w-full flex-col justify-between overflow-hidden px-5 pb-12 pt-[42svh] text-sand sm:px-8 md:flex-row md:items-end md:px-10 md:pb-14 md:pt-0 md:rounded-2xl">
         {/* Bloco de texto (canto inferior esquerdo no desktop). */}
         <div className="max-w-xl">
-          <p className="eyebrow text-sand/80">Vista Pipa</p>
-
           {/* Headline com revelação por linha. */}
           <h1 className="mt-3 font-display leading-[0.92] tracking-tight">
             {TITLE_LINES.map((line, i) => (

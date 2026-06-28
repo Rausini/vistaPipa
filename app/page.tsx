@@ -6,6 +6,7 @@ import { LensTech } from "@/components/sections/LensTech";
 import { Manifesto } from "@/components/sections/Manifesto";
 import { InstaFeed } from "@/components/sections/InstaFeed";
 import { Newsletter } from "@/components/sections/Newsletter";
+import { Reveal } from "@/components/util/Reveal";
 import { getProductsByTag } from "@/lib/products";
 
 export default function Home() {
@@ -14,45 +15,61 @@ export default function Home() {
 
   return (
     <>
-      {/* 1 — Hero (vídeo de fundo) */}
+      {/* 1 — Hero (vídeo de fundo) — tem animação própria, não revela ao rolar */}
       <Hero />
 
       {/* 2 — Vitrine Best Sellers */}
-      <ProductSection
-        id="best-sellers"
-        heading="Best Sellers"
-        tagline="Design icônico ⚡ Caimento certo ⚡ Preço justo"
-        products={bestSellers}
-        ctaLabel="Ver todos"
-        ctaHref="/collections/solar"
-      />
+      <Reveal>
+        <ProductSection
+          id="best-sellers"
+          heading="Best Sellers"
+          tagline="Design icônico ⚡ Caimento certo ⚡ Preço justo"
+          products={bestSellers}
+          ctaLabel="Ver todos"
+          ctaHref="/collections/solar"
+        />
+      </Reveal>
 
       {/* 3 — Banner editorial */}
-      <EditorialBanner />
+      <Reveal>
+        <EditorialBanner />
+      </Reveal>
 
       {/* 4 — Vitrine Performance */}
-      <ProductSection
-        id="performance"
-        heading="Performance"
-        products={performance}
-        ctaLabel="Ver Performance"
-        ctaHref="/collections/performance"
-      />
+      <Reveal>
+        <ProductSection
+          id="performance"
+          heading="Performance"
+          products={performance}
+          ctaLabel="Ver Performance"
+          ctaHref="/collections/performance"
+        />
+      </Reveal>
 
       {/* 5 — Grade de coleções por uso */}
-      <CollectionsGrid />
+      <Reveal>
+        <CollectionsGrid />
+      </Reveal>
 
       {/* 6 — Tecnologia da lente */}
-      <LensTech />
+      <Reveal>
+        <LensTech />
+      </Reveal>
 
       {/* 7 — Manifesto da marca */}
-      <Manifesto />
+      <Reveal>
+        <Manifesto />
+      </Reveal>
 
       {/* 8 — Prova social / feed Instagram */}
-      <InstaFeed />
+      <Reveal>
+        <InstaFeed />
+      </Reveal>
 
       {/* 9 — Newsletter */}
-      <Newsletter />
+      <Reveal>
+        <Newsletter />
+      </Reveal>
     </>
   );
 }
