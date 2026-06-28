@@ -86,8 +86,8 @@ export function Header() {
           aria-label="Vista Pipa — início"
           className="relative block shrink-0 overflow-hidden"
           style={{
-            height: condensed ? 30 : 34,
-            width: condensed ? 26 : 153,
+            height: condensed ? 26 : 34,
+            width: condensed ? 22 : 153,
             transition: `width 0.45s ${EASE}, height 0.45s ${EASE}`,
           }}
         >
