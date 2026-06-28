@@ -10,11 +10,13 @@ const base =
 // Cor do anel de foco por variante: `outline-ink` em fundos claros,
 // `outline-sand` nas variantes usadas sobre fundos escuros.
 const variants: Record<Variant, string> = {
+  // CTA principal: espresso (ink) + creme da marca (sand); hover marrom quente.
   primary: "bg-ink text-sand hover:bg-brown-dark shadow-sm hover:shadow-md focus-visible:outline-ink",
   secondary:
     "border border-ink/80 text-ink hover:bg-ink hover:text-sand focus-visible:outline-ink",
-  ghost: "text-ink hover:bg-ink/5 focus-visible:outline-ink",
-  // CTAs sobre fundos escuros / foto (ex.: hero com vídeo).
+  // Hover com tinta marrom (não cinza) p/ ficar coerente com a paleta quente.
+  ghost: "text-ink hover:bg-brown/10 focus-visible:outline-ink",
+  // CTAs sobre fundos escuros / foto (ex.: hero com vídeo): creme da marca.
   light: "bg-sand text-ink hover:bg-sand-300 shadow-sm hover:shadow-md focus-visible:outline-sand",
   outlineLight: "border border-sand/70 text-sand hover:bg-sand hover:text-ink focus-visible:outline-sand",
 };

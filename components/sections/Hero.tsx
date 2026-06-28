@@ -5,11 +5,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
 
-// Título dividido em linhas — cada linha é revelada com máscara (overflow-hidden)
-// e desliza de baixo, escalonando o início. Reproduz o "SplitText (lines)" do
-// hero da Wolverine: yPercent 40 -> 0 + opacidade, easing expo.out, stagger 0.1s.
-const TITLE_LINES = ["Born", "To", "Fly"];
-
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -40,22 +35,24 @@ export function Hero() {
       <div className="relative flex h-full w-full flex-col justify-between overflow-hidden px-5 pb-12 pt-[42svh] text-sand sm:px-8 md:flex-row md:items-end md:px-10 md:pb-14 md:pt-0 md:rounded-2xl">
         {/* Bloco de texto (canto inferior esquerdo no desktop). */}
         <div className="max-w-xl">
-          {/* Headline com revelação por linha. */}
-          <h1 className="mt-3 font-display leading-[0.92] tracking-tight">
-            {TITLE_LINES.map((line, i) => (
-              <span key={line} className="block overflow-hidden pb-[0.06em]">
-                <span
-                  className={cn(
-                    "block text-6xl sm:text-7xl lg:text-8xl",
-                    !reducedMotion && "animate-hero-line",
-                  )}
-                  // Fase 2 do reveal começa em ~1s; stagger de 0.1s por linha.
-                  style={{ animationDelay: `${1 + i * 0.1}s` }}
-                >
-                  {line}
-                </span>
-              </span>
-            ))}
+          {/* Headline (lockup "Born To Fly") — grande, no canto inferior
+              esquerdo, no estilo do título da referência. Revelado por máscara
+              (overflow-hidden + slide up), como o reveal original. */}
+          <h1 className="mt-3">
+            <span className="sr-only">Born To Fly</span>
+            <span aria-hidden className="block overflow-hidden pb-[0.06em]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/logo/born_to_fly_v2.svg"
+                alt=""
+                className={cn(
+                  "block w-[280px] max-w-full sm:w-[380px] lg:w-[480px]",
+                  !reducedMotion && "animate-hero-line",
+                )}
+                // Fase 2 do reveal começa em ~1s, como o título original.
+                style={{ animationDelay: "1s" }}
+              />
+            </span>
           </h1>
 
           <p

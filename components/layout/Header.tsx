@@ -32,7 +32,7 @@ function IconButton({
       aria-label={label}
       onClick={onClick}
       className={cn(
-        "flex h-9 w-9 items-center justify-center rounded-full text-white/90 transition-colors hover:bg-white/10 hover:text-white",
+        "flex h-9 w-9 items-center justify-center rounded-full text-sand/90 transition-colors hover:bg-sand/10 hover:text-sand",
         className
       )}
     >
@@ -59,21 +59,24 @@ export function Header() {
   const condensed = scrolled && !open;
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-[2vh] z-50 flex justify-center">
+    <header className="pointer-events-none fixed inset-x-0 top-[2.5vh] z-50 flex justify-center">
       <div
         className={cn(
           "pointer-events-auto relative mx-auto flex w-full items-center justify-between",
-          condensed ? "gap-4 px-5 py-2.5 sm:px-6" : "gap-6 px-5 py-5 sm:px-8"
+          // Estado expandido: full-bleed com inset = ao do hero (px-5 / sm:px-8
+          // / md:px-12 = 48px), p/ o início do logo alinhar no eixo X com o
+          // título "Born To Fly" (hero: section md:px-2 + inner md:px-10 = 48px).
+          condensed ? "gap-4 px-5 py-2.5 sm:px-6" : "gap-6 px-5 py-5 sm:px-8 md:px-12"
         )}
         style={{
-          maxWidth: condensed ? "min(680px, 92vw)" : "1280px",
+          maxWidth: condensed ? "min(680px, 92vw)" : "100%",
           transition: `max-width 0.45s ${EASE}, gap 0.45s ${EASE}, padding 0.45s ${EASE}`,
         }}
       >
-        {/* Pílula de fundo: invisível no topo, ganha blur+preto ao condensar. */}
+        {/* Pílula de fundo: invisível no topo, ganha blur+espresso ao condensar. */}
         <div
           aria-hidden
-          className="absolute inset-0 -z-10 rounded-2xl bg-black/85 backdrop-blur-lg"
+          className="absolute inset-0 -z-10 rounded-2xl bg-ink/85 backdrop-blur-lg"
           style={{
             opacity: condensed ? 1 : 0,
             transition: `opacity 0.45s ${EASE}`,
@@ -94,7 +97,7 @@ export function Header() {
           {/* Lockup completo (esquerda fixa): é recortado pela caixa ao condensar. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/logo/pipa-lockup-horizontal-white-v2.svg"
+            src="/assets/logo/pipa-lockup-horizontal-cream.svg"
             alt="Vista Pipa"
             className="absolute left-0 top-0 h-full max-w-none object-contain object-left"
             style={{
@@ -103,10 +106,10 @@ export function Header() {
               transition: `opacity 0.35s ${EASE}`,
             }}
           />
-          {/* Ícone (pipa) branco: aparece no estado condensado. */}
+          {/* Ícone (pipa) creme da marca: aparece no estado condensado. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/logo/pipa-icon-white-header.svg"
+            src="/assets/logo/pipa-icon-cream-header.svg"
             alt=""
             aria-hidden
             className="absolute left-0 top-0 h-full object-contain object-center"
@@ -126,11 +129,11 @@ export function Header() {
               key={item.label}
               href={item.href}
               prefetch={item.exists ? undefined : false}
-              className="group relative text-sm font-medium tracking-[-0.02em] text-white/90 transition-colors hover:text-white"
+              className="group relative text-sm font-medium tracking-[-0.02em] text-sand/90 transition-colors hover:text-sand"
             >
               <span
                 aria-hidden
-                className="absolute -inset-x-2 -inset-y-1.5 -z-10 rounded-md bg-white/10 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                className="absolute -inset-x-2 -inset-y-1.5 -z-10 rounded-md bg-sand/10 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
               />
               {item.label}
             </Link>
@@ -164,7 +167,7 @@ export function Header() {
             aria-label={open ? "Fechar menu" : "Abrir menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="ml-1 flex h-9 items-center gap-1.5 rounded-full px-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10 hover:text-white lg:hidden"
+            className="ml-1 flex h-9 items-center gap-1.5 rounded-full px-2 text-sm font-medium text-sand/90 transition-colors hover:bg-sand/10 hover:text-sand lg:hidden"
           >
             <span>Menu</span>
             <span aria-hidden className="text-base leading-none">
@@ -177,7 +180,7 @@ export function Header() {
       {/* ── Drawer mobile ───────────────────────────────────────────────── */}
       <div
         className={cn(
-          "pointer-events-auto absolute inset-x-3 top-[calc(100%-0.5rem)] overflow-hidden rounded-2xl bg-black/90 backdrop-blur-md lg:hidden",
+          "pointer-events-auto absolute inset-x-3 top-[calc(100%-0.5rem)] overflow-hidden rounded-2xl bg-ink/90 backdrop-blur-md lg:hidden",
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         )}
         style={{ transition: `max-height 0.4s ${EASE}, opacity 0.3s ${EASE}` }}
@@ -189,7 +192,7 @@ export function Header() {
               href={item.href}
               prefetch={item.exists ? undefined : false}
               onClick={() => setOpen(false)}
-              className="rounded-lg px-3 py-3 text-base font-medium text-white/90 transition-colors hover:bg-white/10 hover:text-white"
+              className="rounded-lg px-3 py-3 text-base font-medium text-sand/90 transition-colors hover:bg-sand/10 hover:text-sand"
             >
               {item.label}
             </Link>

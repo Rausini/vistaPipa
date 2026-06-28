@@ -109,8 +109,8 @@ export function ProductCard({ product }: { product: Product }) {
                 className={cn(
                   "block h-6 w-6 rounded-full border ring-offset-2 ring-offset-sand transition-[box-shadow,transform,border-color] duration-200 ease-out group-hover/sw:scale-110 motion-reduce:transform-none motion-reduce:transition-none",
                   i === active
-                    ? "scale-110 border-white ring-2 ring-ink"
-                    : "border-black/10"
+                    ? "scale-110 border-sand ring-2 ring-ink"
+                    : "border-ink/15"
                 )}
                 style={{ backgroundColor: c.hex }}
               />

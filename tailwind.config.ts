@@ -8,13 +8,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Paleta areia/quente da Vista Pipa + tom de alto contraste p/ CTA.
+        // Paleta areia/quente da Vista Pipa, ancorada no creme da marca
+        // (#faecdd, mesma cor do lockup "Born To Fly") + tom de alto contraste
+        // p/ CTA. Tons abaixo do DEFAULT são mais profundos p/ separar
+        // seções/cards do fundo; tons acima são clareados p/ realces.
         sand: {
-          DEFAULT: "#fff9f4",
-          50: "#fffdfb",
-          100: "#fff9f4",
-          200: "#f7ede2",
-          300: "#efe0d0",
+          DEFAULT: "#faecdd",
+          50: "#fef8f0",
+          100: "#faecdd",
+          200: "#f3e1cd",
+          300: "#ebd5ba",
         },
         brown: {
           DEFAULT: "#9e8770",
